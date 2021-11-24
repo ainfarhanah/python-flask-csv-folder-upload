@@ -7,7 +7,9 @@ import datetime
 from werkzeug.utils import secure_filename, send_file
 
 app = Flask('__name__')
+#Don't forget to create directory named uploader
 app.config['UPLOAD_FOLDER'] = 'uploader/'
+
 
 #index page
 @app.route('/')
